@@ -16,6 +16,7 @@ body {
 
 html {
   font-size: 10px;
+  height: 100%;
 }
 
 h1 {
@@ -78,21 +79,12 @@ ul {
   background: #eee;
 }
 
-@media screen and (max-width: 767px), (max-height: 440px) {
-  body {
-    min-width: 320px;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  html {
-    font-size: 20px;
-  }
-}
-
 @media screen and (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
   #main {
     margin: 0;
   }
