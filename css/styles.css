@@ -1,3 +1,10 @@
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.6rem;
@@ -8,29 +15,33 @@ body {
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 h1 {
   font-size: 4rem;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+li {
+    margin: 16px 0;
 }
 
 main {
@@ -41,21 +52,48 @@ main {
 }
 
 section {
-    display: block;
+  display: block;
 }
 
 ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    line-height: 1.6;
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
 }
 
 #headline {
-    margin: 50px 0;
-    text-align: center;
+  margin: 50px 0;
+  text-align: center;
 }
 
 #img-caption {
-    margin: 15px 0 5px 0;
+  margin: 15px 0 5px 0;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media screen and (max-width: 767px), (max-height: 440px) {
+  body {
+    min-width: 320px;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
 }
